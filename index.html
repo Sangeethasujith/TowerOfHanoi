@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="canvas">
+        <div id="title">
+            <h1>Tower of Hanoi</h1>
+            <div id="max-discs-message">Max discs allowed: 7</div>
+          </div>
+        <div id="box-container">
+            <label for="box" id="discno">Number of Disks:</label>
+            <input type="number" id="box" value="3" min="1" max="7">
+            <button id="restart" class="buttons">Start Game</button>
+            <button id="solve" class="buttons">Solve</button>
+            <p class="moves">0 moves</p>
+        </div>
+        <div id="towers">
+            <div class="base">
+                <div class="line1"></div>
+            </div>
+            <div class="base">
+                <div class="line2"></div>
+            </div>
+            <div class="base">
+                <div class="line3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

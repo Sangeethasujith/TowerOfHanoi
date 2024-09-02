@@ -1,0 +1,128 @@
+body {
+    background-color: #f0f0f5; /* Soft off-white for a clean background */
+    font-family: 'Montserrat', sans-serif; /* A modern, clean font */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#canvas {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Dark slate for text */
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.moves {
+    font-size: 1.5em;
+    color: #34495e; /* Muted dark blue */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#towers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.base {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border-bottom: 10px solid #7f8c8d; /* Neutral gray for the base */
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #bdc3c7, #ecf0f1); /* Subtle gradient */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.line1, .line2, .line3 {
+    width: 10px;
+    height: 200px;
+    background: #34495e; /* Dark slate for rods */
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+}
+
+#towers li {
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0; /* Align to the bottom of the tower */
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    color: #ffffff; /* White text for contrast */
+    font-weight: bold;
+    font-size: 1.2em;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#disc1 { width: 30px;height: 20px; background-color: #e74c3c; /* Red disc */ }
+#disc2 { width: 60px; height: 20px;background-color: #f39c12; /* Orange disc */ }
+#disc3 { width: 90px; height: 20px;background-color: #f1c40f; /* Yellow disc */ }
+#disc4 { width: 120px; height: 20px;background-color: #27ae60; /* Green disc */ }
+#disc5 { width: 150px; height: 20px;background-color: #2980b9; /* Blue disc */ }
+#disc6 { width: 180px; height: 20px;background-color: #8e44ad; /* Purple disc */ }
+#disc7 { width: 210px; height: 20px;background-color: #2ecc71; /* Greenish disc */ }
+
+.buttons {
+    font-size: 16px;
+    text-transform: uppercase;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    background-color: #3498db; /* Bright blue button */
+    color: #ffffff;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.buttons:hover {
+    background-color: #2980b9; /* Darker blue button on hover */
+    transform: scale(1.05);
+}
+
+#box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px; /* Space between elements */
+}
+
+#box {
+    font-size: 1.2em;
+    text-align: center;
+    height: 40px;
+    width: 60px;
+    border-radius: 5px;
+    border: 2px solid #3498db; /* Matching border color */
+    color: #3498db; /* Matching text color */
+    padding: 5px;
+}
+
+#max-discs-message {
+    font-size: 1.2em;
+    color: #e74c3c; /* Red for emphasis */
+    margin: 10px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
